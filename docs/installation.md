@@ -71,7 +71,7 @@ With options:
 
 ## Step 4: Restart OpenCode
 
-Both plugins load on startup. After restarting OpenCode, you should see the Olympus persona sidebar and Timeline section.
+Both plugins load on startup. After restarting OpenCode, you should see the agent persona sidebar and Timeline section.
 
 ---
 
@@ -80,11 +80,11 @@ Both plugins load on startup. After restarting OpenCode, you should see the Olym
 | Option | Default | Description |
 |--------|---------|-------------|
 | `enabled` | `true` | Enable/disable the TUI plugin |
-| `locale` | `"en"` | Language: `"en"` or `"ko"` — affects all UI labels, status text, and persona dialogue |
+| `locale` | `"en"` | Language: `"en"` or `"ko"` — affects persona dialogue only; UI labels always English |
 | `maxEntries` | `50` | Max timeline entries displayed |
 | `showTimestamps` | `true` | Show timestamps in timeline |
-| `showModels` | `true` | Show model names per agent |
-| `showPersonas` | `true` | Show Olympus persona section (disable to see timeline only) |
+| `showModels` | `true` | Show shortened model names per agent (provider prefix removed) |
+| `showPersonas` | `true` | Show agent persona section (disable to see timeline only) |
 | `compact` | `false` | Compact mode (emojis only) |
 | `collapsedAgents` | `false` | Start with all agent timelines collapsed |
 
