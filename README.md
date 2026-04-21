@@ -470,28 +470,6 @@ oh-my-opencode가 에이전트를 병렬로 실행할 때, 백그라운드에서
 ───────────────────────
   3 active · 3 done · 0 error
 ```
-▼ 🏛️ 올림포스
-  🪨 시시포스         anthropic/claude-sonnet-4  [작업중]  "한 번 더 밀어봅시다..."
-  ▼ 🔍 탐험가        anthropic/claude-sonnet-4  [작업중]  "단서를 발견했습니다!"
-      12:03:10  🔧 bash: rg "TODO" src/
-      12:03:08  📄 read: package.json
-  ▼ 📚 사서           google/gemini-2.5-pro      [완료]  ✓  "기록이 확인되었습니다"
-      12:02:55  📄 read: docs/api.md
-  🧙 오라클           google/gemini-2.5-pro      [완료]  ✓  "길이 열렸습니다"
-  🦉 메티스           💤
-  🎭 모무스           💤
-  🔥 프로메테우스      💤
-
-  ▼ ⏳ 타임라인
-      12:03:15  🧗 시시포스 주니어  ✏️ write: src/utils.ts
-      12:03:14  🪨 시시포스        🔧 bash: npm test
-      12:03:12  🪨 시시포스        📄 read: src/index.ts
-      12:03:10  🔍 탐험가         🔧 bash: rg "TODO" src/
-      12:02:55  📚 사서           📄 read: docs/api.md
-      12:02:40  🧙 오라클         🔧 bash: cargo test --all
-───────────────────────────────────────────────
-  3 활성 · 3 완료 · 0 에러
-```
 
 ---
 
