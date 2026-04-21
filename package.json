@@ -1,0 +1,48 @@
+{
+  "name": "opencode-time-travel",
+  "version": "0.1.0",
+  "description": "Session Timeline Replay — OpenCode Subagent Activity Monitoring, Model Display & Olympus Personas",
+  "author": "sigco3111",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sigco3111/opencode-time-travel.git"
+  },
+  "homepage": "https://github.com/sigco3111/opencode-time-travel#readme",
+  "type": "module",
+  "scripts": {
+    "test": "vitest run",
+    "test:watch": "vitest"
+  },
+  "exports": {
+    "./server": "./src/server.ts",
+    "./tui": "./src/tui.tsx"
+  },
+  "files": [
+    "src/server.ts",
+    "src/tui.tsx"
+  ],
+  "keywords": [
+    "opencode",
+    "opencode-plugin",
+    "oh-my-opencode",
+    "tui-plugin",
+    "agent-monitoring",
+    "timeline",
+    "greek-mythology"
+  ],
+  "devDependencies": {
+    "vitest": "^3.0.0"
+  },
+  "peerDependencies": {
+    "@opencode-ai/plugin": ">=1.4.3"
+  },
+  "peerDependenciesMeta": {
+    "@opentui/core": {
+      "optional": true
+    },
+    "@opentui/solid": {
+      "optional": true
+    }
+  }
+}
