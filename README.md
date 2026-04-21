@@ -103,61 +103,42 @@ Each agent has 4 states (start, working, done, error) with randomized lines:
 
 ## 📦 Installation
 
-### From GitHub
+### For AI Agents (Auto-Install)
 
-**1. Clone the repository:**
+Paste this URL into your AI agent (Claude Code, OpenCode, Cursor, etc.) and it will handle the setup:
+
+```
+https://raw.githubusercontent.com/sigco3111/opencode-time-travel/main/docs/installation.md
+```
+
+### For Humans (Manual Install)
+
+**Step 1. Clone the repository:**
 
 ```bash
 git clone https://github.com/sigco3111/opencode-time-travel.git
 ```
 
-**2. Server Plugin** — `~/.config/opencode/opencode.json`:
+**Step 2. Server Plugin** — edit `~/.config/opencode/opencode.json`:
+
 ```json
 {
-  "plugin": ["./path/to/opencode-time-travel/src/server.ts"]
+  "plugin": ["/absolute/path/to/opencode-time-travel/src/server.ts"]
 }
 ```
 
-Replace `./path/to/opencode-time-travel` with the actual path to the cloned repository.
+**Step 3. TUI Plugin** — edit `~/.config/opencode/tui.json`:
 
-**3. TUI Plugin** — `~/.config/opencode/tui.json`:
-```json
-{
-  "$schema": "https://opencode.ai/tui.json",
-  "plugin": [["./path/to/opencode-time-travel/src/tui.tsx", { "enabled": true }]]
-}
-```
-
-**4. Restart OpenCode**
-
-Both plugins load on startup. Agent personas + timeline in one package.
-
-> **💡 Let your LLM agent handle it**
-> Paste this into Claude Code, OpenCode, Cursor, etc.:
-> https://raw.githubusercontent.com/sigco3111/opencode-time-travel/main/docs/installation.md
-
-### Alternative: Copy to plugins directory
-
-```bash
-mkdir -p ~/.config/opencode/plugins
-cp src/server.ts ~/.config/opencode/plugins/time-travel-server.ts
-cp src/tui.tsx ~/.config/opencode/plugins/time-travel.tsx
-```
-
-`~/.config/opencode/opencode.json`:
-```json
-{
-  "plugin": ["./plugins/time-travel-server.ts"]
-}
-```
-
-`~/.config/opencode/tui.json`:
 ```json
 {
   "$schema": "https://opencode.ai/tui.json",
-  "plugin": [["./plugins/time-travel.tsx", { "enabled": true }]]
+  "plugin": [
+    ["/absolute/path/to/opencode-time-travel/src/tui.tsx", { "enabled": true }]
+  ]
 }
 ```
+
+**Step 4. Restart OpenCode.**
 
 ---
 
@@ -567,61 +548,42 @@ oh-my-opencode가 에이전트를 병렬로 실행할 때, 백그라운드에서
 
 ## 📦 설치
 
-### GitHub에서 설치
+### 에이전트용 자동 설치
 
-**1. 저장소 클론:**
+AI 에이전트(Claude Code, OpenCode, Cursor 등)에 아래 URL을 붙여넣으면 자동으로 설정합니다:
+
+```
+https://raw.githubusercontent.com/sigco3111/opencode-time-travel/main/docs/installation.md
+```
+
+### 수동 설치
+
+**Step 1. 저장소 클론:**
 
 ```bash
 git clone https://github.com/sigco3111/opencode-time-travel.git
 ```
 
-**2. Server 플러그인 설정** — `~/.config/opencode/opencode.json`:
+**Step 2. Server 플러그인** — `~/.config/opencode/opencode.json` 수정:
+
 ```json
 {
-  "plugin": ["./path/to/opencode-time-travel/src/server.ts"]
+  "plugin": ["/absolute/path/to/opencode-time-travel/src/server.ts"]
 }
 ```
 
-`./path/to/opencode-time-travel`을 실제 클론한 저장소 경로로 변경하세요.
+**Step 3. TUI 플러그인** — `~/.config/opencode/tui.json` 수정:
 
-**3. TUI 플러그인 설정** — `~/.config/opencode/tui.json`:
-```json
-{
-  "$schema": "https://opencode.ai/tui.json",
-  "plugin": [["./path/to/opencode-time-travel/src/tui.tsx", { "enabled": true }]]
-}
-```
-
-**4. OpenCode 재시작**
-
-두 플러그인 모두 시작 시 로드됩니다. 에이전트 페르소나 + 타임라인이 하나로 통합되어 표시됩니다.
-
-> **💡 LLM 에이전트에게 맡기세요**
-> Claude Code, OpenCode, Cursor 등에 아래 가이드 URL을 붙여넣으면 알아서 설정합니다:
-> https://raw.githubusercontent.com/sigco3111/opencode-time-travel/main/docs/installation.md
-
-### 대안: 플러그인 디렉토리에 복사
-
-```bash
-mkdir -p ~/.config/opencode/plugins
-cp src/server.ts ~/.config/opencode/plugins/time-travel-server.ts
-cp src/tui.tsx ~/.config/opencode/plugins/time-travel.tsx
-```
-
-`~/.config/opencode/opencode.json`:
-```json
-{
-  "plugin": ["./plugins/time-travel-server.ts"]
-}
-```
-
-`~/.config/opencode/tui.json`:
 ```json
 {
   "$schema": "https://opencode.ai/tui.json",
-  "plugin": [["./plugins/time-travel.tsx", { "enabled": true }]]
+  "plugin": [
+    ["/absolute/path/to/opencode-time-travel/src/tui.tsx", { "enabled": true }]
+  ]
 }
 ```
+
+**Step 4. OpenCode 재시작.**
 
 ---
 
